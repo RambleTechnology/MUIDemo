@@ -1,0 +1,18 @@
+{
+	"index.html": {
+		"refer": [
+			"Type.html",
+			"People.html",
+			"Cart.html",
+			"Main.html"
+		],
+		"resources": [
+			"Main.html"
+		]
+	},
+	"People.html": {
+		"resources": [
+			"content/个人中心.png"
+		]
+	}
+}

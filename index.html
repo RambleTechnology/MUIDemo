@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<nav class="mui-bar mui-bar-tab">
+				<a class="mui-tab-item mui-active" id="main">
+					<span class="mui-icon mui-icon-phone"></span>
+					<span class="mui-tab-label">首页</span>
+				</a>
+				<a class="mui-tab-item" id="type">
+					<span class="mui-icon mui-icon-chat"></span>
+					<span class="mui-tab-label">分类</span>
+				</a>
+				<a class="mui-tab-item" id="cart">
+					<span class="mui-icon  mui-icon-home"></span>
+					<span class="mui-tab-label">购物车</span>
+				</a>
+				<a class="mui-tab-item" id="people">
+					<span class="mui-icon mui-icon-map"></span>
+					<span class="mui-tab-label">我的</span>
+				</a>
+			</nav>
+		</div>
+	</body>
+	<script src="js/mui.min.js"></script>
+	<script>
+		mui.init({
+			subpages: [{
+				url: "Main.html",
+				id: "main",
+				styles: {
+					top: "0px",
+					bottom: "50px"
+				},
+				show: {
+					aniShow: "fade-in",
+				}
+			}]
+		});
+		mui.plusReady(function() {
+			document.getElementById("main").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "Main.html",
+					id: "main",
+					styles: {
+						top: "0px",
+						bottom: "50px"
+					},
+					show: {
+						aniShow: "fade-in",
+					}
+				})
+			});
+			document.getElementById("type").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "Type.html",
+					id: "type",
+					styles: {
+						top: "0px",
+						bottom: "50px"
+					},
+					show: {
+						aniShow: "fade-in",
+					}
+				})
+			});
+			document.getElementById("cart").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "Cart.html",
+					id: "cart",
+					styles: {
+						top: "0px",
+						bottom: "50px"
+					},
+					show: {
+						aniShow: "fade-in",
+					}
+				})
+			});
+			document.getElementById("people").addEventListener("tap", function() {
+				mui.openWindow({
+					url: "People.html",
+					id: "people",
+					styles: {
+						top: "0px",
+						bottom: "50px"
+					},
+					show: {
+						aniShow: "fade-in",
+					}
+				})
+			});
+		});
+	</script>
+
+</html>
